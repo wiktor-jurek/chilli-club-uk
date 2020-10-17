@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
   <title>Strathclyde Chilli Club</title>
 </head>
 
@@ -51,21 +54,62 @@
       </p>
     </section>
 
-    <div id="form-wrapper" class="bg-orange-200 rounded-3xl w-1/2 m-auto p-10">
+    <div id="form-wrapper" class="bg-orange-200 rounded-3xl w-4/5 m-auto p-10 my-32">
       <h1 class=" text-center text-xl">Sign the declaration of 🔥 chillipendance 🔥</h1>
-      <p class="text-center">Become a member</p>
+      <h3 class="text-center text-lg">Become a member</h3>
+      <p class="text-center py-2">You can choose to pay £6 for a membership with a chilli starting kit, but if you're
+        already
+        a seasoned veteran
+        in chilli growing, you can opt to join for just £2.</p>
 
-      <form name="contact" method="POST" data-netlify="true" action="/formsuccess.html" class="p-5">
+      <form name="contact" method="POST" data-netlify="true" action="/formsuccess.html"
+        class="p-5 flex flex-col items-center space-y-4">
         <p>
-          <label>Your Name: <input type="text" name="name" /></label>
+          <input type="text" name="name"
+            class="bg-yellow-200 border-2 border-orange-900 rounded-lg w-full py-2 px-5 text-black leading-tight"
+            id="inline-full-name" type="text" placeholder="Your Name" />
         </p>
         <p>
-          <label>Your Email: <input type="email" name="email" /></label>
+          <input type=" email" name="email"
+            class="bg-yellow-200 border-2 border-orange-900 rounded-lg w-full py-2 px-5 text-black leading-tight"
+            id="inline-full-name" type="text" placeholder="Email" />
         </p>
-        <p>
+        <div class="inline-block relative w-64">
+          <select
+            class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+            <option>Basic Membership - £2</option>
+            <option>Kit Membership - £6</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+          </div>
+        </div>
+
+        <div id="confirmation" class="flex flex-col items-center bg-orange-100 rounded-xl p-5 mt-5 shadow-lg">
+          <div id="confirmation-text" class="flex items-center my-3 mx-3">
+            <p>"I hereby confirm that I wish to connect with the coterie of chilliheads, and thus join the Chilliclub
+              council
+              as a respected member."
+            </p>
+            <div id="cost" class="w-2/3">
+              <p class="text-orange-900 font-extrabold text-5xl text-center">
+                £2
+              </p>
+              <p class="text-center">
+                Cost of entry
+              </p>
+            </div>
+          </div>
           <button type="submit"
-            class="bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded-md">Send</button>
-        </p>
+            class="bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded-md my-5 w-1/4">
+            <i class="fa fa-scroll pr-1"></i>
+            Submit
+          </button>
+
+
+        </div>
+
       </form>
     </div>
   </div>
