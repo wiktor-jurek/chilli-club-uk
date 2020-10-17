@@ -1,0 +1,24 @@
+{
+  "name": "chilli-club-uk",
+  "version": "1.0.0",
+  "description": "The repository for the chilliclub.uk website",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^1.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:css": "tailwind build src/source-style.css -o dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiktor-jurek/chilli-club-uk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiktor-jurek/chilli-club-uk/issues"
+  },
+  "homepage": "https://github.com/wiktor-jurek/chilli-club-uk#readme"
+}

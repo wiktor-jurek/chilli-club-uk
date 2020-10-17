@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Strathclyde Chilli Club</title>
+</head>
+
+<body>
+  <div class="container mx-auto px-10">
+    <nav class="py-10 flex justify-between">
+      The Strathclyde Chilli Club
+      <ul class="flex space-between space-x-5">
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <header class="px-12 flex items-center">
+      <div id="hero-text" class="flex flex-col py-5 flex-1">
+        <h1 class="text-2xl text-center sm:text-4xl sm:text-left lg:text-6xl font-bold py-2">Sweat, Smile, Repeat.</h1>
+        <h2 class="text-lg text-center sm:text-left">Strathclyde Chilli Club welcomes you to the 🔥 hottest club 🔥 in
+          Strathclyde.
+        </h2>
+        <h4 class="hidden sm:block">We're mad about chillies and are always looking for fellow chilli heads to join in
+          the fun! </h4>
+        <div id="hero-button-cluster" class="py-5 flex space-x-3 justify-center sm:justify-start">
+          <button class="bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded-md">About</button>
+          <button
+            class="bg-transparent hover:bg-orange-200 font-semibold hover:font-bold py-2 px-4 rounded-md">Contact</button>
+        </div>
+      </div>
+      <img src="img/chillipepper.webp" alt="Chilli Pepper" class="hidden sm:block sm:w-1/6">
+    </header>
+    <section class="py-10">
+      <p>
+        Welcome to Glasgow's biggest hub of chilli fanatics! The club started over the great quarantine of 2020. As the
+        founding members were bored, locked in their flats and houses, they decided to order a few chilli seeds online;
+        the rest was history. The passion and enthusiasm for the chilli is shared among all the members of the chilli
+        club.
+      </p>
+    </section>
+    <section class="py-10">
+      <p>
+        Growing chillies is actually dead easy, and by being a member you get access to all of our wonderful resources
+        to
+        help you with potting, germination and growing your own chilli plant! We've partnered with "supplier", so you
+        can
+        get your chilli starting kit when you join!
+      </p>
+    </section>
+
+    <div id="form-wrapper" class="bg-orange-200 rounded-3xl w-1/2 m-auto p-10">
+      <h1 class=" text-center text-xl">Sign the declaration of 🔥 chillipendance 🔥</h1>
+      <p class="text-center">Become a member</p>
+
+      <form name="contact" method="POST" data-netlify="true" action="/formsuccess.html" class="p-5">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <button type="submit"
+            class="bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded-md">Send</button>
+        </p>
+      </form>
+    </div>
+
+  </div>
+  <footer class="py-5 mt-5 bg-orange-300 text-center">
+    <p>The hottest club in Strathclyde | &copy; 2020</p>
+  </footer>
+</body>
+
+</html>
