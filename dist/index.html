@@ -19,7 +19,8 @@
 </head>
 
 <body>
-  <div class="bg-crimson-800  text-white pb-32">
+  <!-- Hero -->
+  <div class=" text-black pb-32">
     <div class="container mx-auto px-10">
       <nav class="py-10 flex justify-between font-semibold text-xl">
         <div id="logo-text" class="">
@@ -48,124 +49,155 @@
               class="bg-transparent hover:bg-orange-200 font-semibold hover:font-bold py-2 px-4 rounded-md">Contact</button>
           </div>
         </div>
-        <img src="img/chilli-right.png" alt="Chilli Pepper"
-          class="bg-white rounded-full px-10 w-1/2 sm:bg-transparent sm:rounded-none sm:px-0 sm:w-1/4">
+        <img src="img/chilli-right.png" alt="Chilli Pepper" class=" rounded-full px-10 w-1/2 sm:px-0 sm:w-1/4">
       </header>
-
     </div>
   </div>
-  <div class="container mx-auto md:px-10 z-10">
-    <section class="py-32" id="about">
-      <h2 class="text-center text-4xl pb-20">About Us</h2>
+
+  <!-- About -->
+  <section class=" py-32 bg-gray-100" id="about">
+
+    <div class="container mx-auto md:px-10 z-10">
       <div id="card-container"
         class="flex flex-col lg:flex-row items-center lg:items-stretch space-y-10 lg:space-y-0  lg:justify-around">
-        <div class="max-w-sm rounded-md overflow-hidden shadow-lg">
-          <img class="w-full h-card-height object-cover" src="img/chillipeppers.jpg" alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Ground Zero for all things chilli</div>
-            <p class="text-gray-700 text-base">
-              Welcome to Glasgow's biggest hub of chilli fanatics! The club started over the great quarantine of 2020.
-              As
-              the
-              founding members were bored, locked in their flats and houses, they decided to order a few chilli seeds
-              online;
-              the rest was history. The passion and enthusiasm for the chilli is shared among all the members of the
-              chilli
-              club.
-            </p>
-          </div>
+        <!-- Card 1 -->
+        <div class="max-w-sm rounded-md overflow-hidden bg-white shadow-xl p-10 ">
+          <h3 class="text-center text-gray-700 font-bold text-2xl pb-2">All about the heat</h3>
+          <p class="text-gray-700 text-base">
+            Welcome to Glasgow's biggest hub of chilli fanatics! The club started over the great quarantine of 2020. As
+            the
+            founding members were bored, locked in their flats and houses, they decided to order a few chilli seeds
+            online;the rest was history.
+          </p>
         </div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
-          <img class="w-full h-card-height object-cover" src="img/sapling.jpg" alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Get started in no time.</div>
-            <p class="text-gray-700 text-base">
-              Growing chillies is actually dead easy, and by being a member you get access to all of our wonderful
-              resources
-              to
-              help you with potting, germination and growing your own chilli plant! We've partnered with "supplier",
-              so
-              you
-              can
-              get your chilli starting kit when you join!
 
-            </p>
-          </div>
+        <!-- Card 2 -->
+        <div class="max-w-sm rounded-md overflow-hidden bg-white shadow-xl p-10 ">
+          <h3 class="text-center text-gray-700 font-bold text-2xl pb-2">Grow it yourself</h3>
+          <p class="text-gray-700 text-base">
+            Growing chillies is actually dead easy, and by being a member you get access to all of our wonderful
+            resources to help you with potting, germination and growing your own chilli plants in no time whatsoever.
+          </p>
         </div>
       </div>
 
-      <div id="declaration" class="bg-fun-blue-200 rounded-3xl w-4/5 m-auto md:p-10 mt-32">
-        <h1 class=" text-center text-2xl py-6 font-semibold">Sign the declaration of chillipendance</h1>
-        <p class="text-center py-2">You can choose to pay £6 for a membership with a chilli starting kit, but if
-          you're
-          already
-          a seasoned veteran
-          in chilli growing, you can opt to join for just £2.</p>
+  </section>
 
-        <form name="registration" method="POST" data-netlify="true" action="/formsuccess.html"
-          class="p-5 flex flex-col items-center space-y-4">
-          <p>
-            <input type="text" name="name"
-              class="bg-white border  border-apple-900 rounded-xl w-full py-2 px-5 text-black leading-tight"
-              id="inline-full-name" type="text" placeholder="Your Name" />
-          </p>
-          <p>
-            <input type="email" name="email"
-              class="bg-white border border-apple-900 rounded-xl w-full py-2 px-5 text-black leading-tight"
-              id="inline-full-name" type="text" placeholder="Email" />
-          </p>
-          <div class="inline-block relative w-64">
-            <select name="membership-type" id="membership-selector"
-              class="block appearance-none w-full  bg-white border border-apple-900 hover:border-gray-500 py-2 px-4 rounded-xl leading-tight focus:outline-none">
-              <option>Basic Membership - £2</option>
-              <option>Kit Membership - £6</option>
-            </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
-            </div>
-          </div>
-
-          <div id="confirmation" class="flex flex-col items-center bg-fun-blue-100 rounded-xl md:p-5 mt-5 shadow-lg">
-            <div id="confirmation-text"
-              class="flex flex-col-reverse md:flex-row items-center md:space-x-10 my-3 mx-3 w-full px-10">
-              <div class=" text-center md:text-left">
-                <p class="sm:py-2">I hereby confirm that I wish to connect with the coterie of chilliheads, and thus
-                  join
-                  the
-                  Chilliclub
-                  council
-                  as a respected member.
-                </p>
-                <p id="chilli-kit-option" class="hidden font-bold">
-                  I also wish to receive a chilli growing starter pack, courtesy of the South Devon Chilli Farm.
-                </p>
-
-              </div>
-              <div id="cost" class="w-1/4 hidden md:block">
-                <p class="text-apple-900 font-extrabold text-5xl text-center cost-of-entry">
-                  £2
-                </p>
-                <p class="text-center ">
-                  Cost of entry
-                </p>
-              </div>
-            </div>
-            <button type="submit"
-              class="bg-apple-600 hover:bg-apple-700 text-white font-bold py-2 px-4 rounded-md my-5 md:w-1/4">
-              <p class="text-xl cost-of-entry block md:hidden">£2</p>
-
-              <i class="fa fa-scroll pr-1"></i>
-              Submit
-            </button>
-
-
-          </div>
-
-        </form>
+  <section class="py-20">
+    <h1 class="text-5xl font-bold text-center">Memberships</h1>
+    <p class="text-center font-medium text-gray-800">
+      Join Strathclyde's exclusive group of chilliheads and we'll help you work towards a bountiful harvest.</p>
+    <div class="card-wrapper flex flex-col md:flex-row items-center md:items-stretch justify-around my-10 md:py-2">
+      <!-- Card 1 -->
+      <div class="border rounded p-8 m-5 w-4/5 md:w-1/2 shadow-sm card">
+        <div class="card-top mb-8">
+          <h2 class="font-semibold text-2xl">Membership</h2>
+          <p>The membership fee you pay to keep Strathclyde's chilliheads going. Get access to the group page,
+            events and guidance from your fellow chilliheads. 🌶</p>
+          <h1 class="text-5xl pb-6 font-bold">£2</h1>
+          <a href="#declaration" class="bg-fun-blue-700 text-white font-semibold py-2 px-4 rounded-md">Interested?</a>
+        </div>
+        <div class="card-bottom my-5 py-5 border-t-2">
+          <p class="font-medium">WHAT'S INCLUDED</p>
+          <ul>
+            <li class="flex flex-col space-y-2 my-5">
+              <p class="text-cod-grey"><i class="fas fa-check text-apple-500"></i> All of our tips and tricks.</p>
+              <p><i class="fas fa-check text-apple-500"></i> Access to our chilli growing expertise.</p>
+              <p><i class="fas fa-check text-apple-500"></i> Participate in our "spice-off" competitions.</p>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <!-- Card 2 -->
+      <div class="border rounded p-8 m-5 w-4/5 md:w-1/2 shadow-sm card">
+        <div class="card-top mb-8">
+          <h2 class="font-semibold text-2xl">Membership + Kit</h2>
+          <p>If you're just starting out on your chilli journey, we've partnered up with <a href="">South Devon
+              Chilli Farm</a> to provide you with kits to get started on your chilli journey 🌶</p>
+          <h1 class="text-5xl pb-6 font-bold">£6</h1>
+          <a href="#declaration" class="bg-fun-blue-700 text-white font-semibold py-2 px-4 rounded-md">Interested?</a>
+        </div>
+        <div class="card-bottom my-5 py-5 border-t-2">
+          <p class="font-medium">WHAT'S INCLUDED</p>
+          <ul>
+            <li class="flex flex-col space-y-2 my-5">
+              <p class="text-cod-grey"><i class="fas fa-check text-apple-500"></i> All of our tips and tricks.</p>
+              <p><i class="fas fa-check text-apple-500"></i> Access to our chilli growing expertise.</p>
+              <p><i class="fas fa-check text-apple-500"></i> Participate in our "spice-off" competitions.</p>
+              <p><i class="fas fa-check text-apple-500"></i> Get your own chill-starting kit!</p>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <div id="declaration" class=" w-3/5 m-auto md:p-10 mt-10">
+    <h1 class=" text-center text-4xl py-6 font-bold">Register your interest</h1>
+    <p class="text-center py-2">We're not officially a club yet, so all we can do is register your interest. Complete
+      the form below and we'll get back to you when we become a part of the union 💪.</p>
+
+    <form name="registration" method="POST" data-netlify="true" action="/formsuccess.html"
+      class="p-5 flex flex-col items-center space-y-4">
+      <p>
+        <input type="text" name="name"
+          class="bg-white border  border-gray-400 rounded-md w-full py-2 px-5 text-black leading-tight"
+          id="inline-full-name" type="text" placeholder="Your Name" />
+      </p>
+      <p>
+        <input type="email" name="email"
+          class="bg-white border border-gray-400 rounded-md w-full py-2 px-5 text-black leading-tight"
+          id="inline-full-name" type="text" placeholder="Email" />
+      </p>
+      <div class="inline-block relative w-64">
+        <select name="membership-type" id="membership-selector"
+          class="block appearance-none w-full  bg-white border border-gray-400 hover:border-gray-200 py-2 px-4 rounded-md leading-tight focus:outline-none">
+          <option>Basic Membership - £2</option>
+          <option>Kit Membership - £6</option>
+        </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+        </div>
+      </div>
+
+      <div id="confirmation" class="flex flex-col items-center border rounded-xl md:p-5  shadow-lg">
+        <div id="confirmation-text"
+          class="flex flex-col-reverse md:flex-row items-center md:space-x-10 my-3 mx-3 w-full px-10">
+          <div class=" text-center md:text-left">
+            <p class="sm:py-2">I hereby confirm that I wish to connect with the coterie of chilliheads, and thus join
+              the Chilliclub council as a respected member.
+            </p>
+            <p id="chilli-kit-option" class="hidden font-bold">
+              I also wish to receive a chilli growing starter pack, courtesy of the South Devon Chilli Farm.
+            </p>
+
+          </div>
+          <div id="cost" class="w-1/4 hidden md:block">
+            <p class="text-apple-900 font-extrabold text-5xl text-center cost-of-entry">
+              £2
+            </p>
+            <p class="text-center ">
+              Cost of entry
+            </p>
+          </div>
+        </div>
+        <button type="submit"
+          class="bg-apple-600 hover:bg-apple-700 text-white font-bold py-2 px-4 rounded-md my-5 md:w-1/4">
+          <p class="text-xl cost-of-entry block md:hidden">£2</p>
+
+          <i class="fa fa-scroll pr-1"></i>
+          Submit
+        </button>
+
+
+      </div>
+
+    </form>
   </div>
-  <footer class="py-5 mt-5 bg-crimson-300 text-center text-cod-grey">
+  </div>
+  <footer class="py-5 mt-5 border-t-2 text-center text-cod-grey">
     <p>The hottest club in Strathclyde | &copy; 2020</p>
   </footer>
 </body>
